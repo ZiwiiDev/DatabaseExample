@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3B6B6"
+    tools:context=".InsertarProducto">
+
+    <TextView
+        android:id="@+id/tituloTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/tituloInsertar"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/nombreProductoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombreProductoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/nombreProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTarea" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/hintNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/precioProductoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreProductoTextView" />
+
+    <TextView
+        android:id="@+id/precioProductoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/precioProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/hintPrecio"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientesProductoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioProductoTextView" />
+
+    <TextView
+        android:id="@+id/ingredientesProductoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/ingredientesProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIngredientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrecio" />
+
+    <EditText
+        android:id="@+id/editTextIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/hintIngredientes"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pesoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesProductoTextView" />
+
+    <TextView
+        android:id="@+id/pesoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/pesoProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngredientes" />
+
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/hintPeso"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxDisponible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoTextView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="58dp"
+        android:text="@string/disponibleCheckBox"
+        app:layout_constraintBottom_toTopOf="@+id/botonGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
+
+    <Button
+        android:id="@+id/botonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/botonGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonVolver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDisponible" />
+
+    <Button
+        android:id="@+id/botonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/botonVolver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDisponible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

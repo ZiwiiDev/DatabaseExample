@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/insertarProducto"
+        android:title="@string/insertarProducto">
+    </item>
+
+    <item android:id="@+id/eliminarProducto"
+        android:title="@string/eliminarMenu">
+    </item>
+
+    <item android:id="@+id/preferencias"
+        android:title="@string/preferencias">
+    </item>
+
+</menu>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3B6B6"
+    tools:context=".FichaProducto">
+
+    <TextView
+        android:id="@+id/tituloModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/modificarDatos"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textViewModificarNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewModificarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/nombreProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextModificarNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloModificar" />
+
+    <EditText
+        android:id="@+id/editTextModificarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/hintModificarNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewModificarPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModificarNombre" />
+
+    <TextView
+        android:id="@+id/textViewModificarPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/precioProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextModificarPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificarNombre" />
+
+    <EditText
+        android:id="@+id/editTextModificarPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="@string/hintModificarPrecio"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewModificarIngredientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModificarPrecio" />
+
+    <TextView
+        android:id="@+id/textViewModificarIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/ingredientesProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextModificarIngredientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificarPrecio" />
+
+    <EditText
+        android:id="@+id/editTextModificarIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/hintModificarIngredientes"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModificarIngredientes" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/pesoProducto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextModificarPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificarIngredientes" />
+
+    <EditText
+        android:id="@+id/editTextModificarPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/hintModificarPeso"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/checkboxModificarDisponible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <CheckBox
+        android:id="@+id/checkboxModificarDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="76dp"
+        android:text="@string/disponibleCheckBox"
+        app:layout_constraintBottom_toTopOf="@+id/botonModificarGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificarPeso" />
+
+    <Button
+        android:id="@+id/botonModificarGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="114dp"
+        android:text="@string/botonGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonModificarVolver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxModificarDisponible" />
+
+    <Button
+        android:id="@+id/botonModificarVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="114dp"
+        android:text="@string/botonVolver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonModificarGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxModificarDisponible" />
+
+    <TextView
+        android:id="@+id/reciboNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="22dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/editTextModificarNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloModificar" />
+
+    <TextView
+        android:id="@+id/reciboPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/editTextModificarPrecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reciboNombre" />
+
+    <TextView
+        android:id="@+id/reciboIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="14dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/editTextModificarIngredientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reciboPrecio" />
+
+    <TextView
+        android:id="@+id/reciboPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="316dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextModificarPeso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

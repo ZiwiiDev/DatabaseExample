@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Supermercado Oliver</string>
+    <string name="nombreProducto">Nombre</string>
+    <string name="precioProducto">Precio</string>
+    <string name="insertarProducto">Insertar Producto</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="tituloToolbar">Toolbar Oliver</string>
+    <string name="tituloInsertar">- Insertar Producto -</string>
+    <string name="hintNombre">Introduce el nombre...</string>
+    <string name="hintPrecio">Introduce el precio...</string>
+    <string name="ingredientesProducto">Ingredientes</string>
+    <string name="hintIngredientes">Introduce ingredientes...</string>
+    <string name="pesoProducto">Peso en gramos</string>
+    <string name="hintPeso">Introduce el peso...</string>
+    <string name="disponibleCheckBox">¿Disponible?</string>
+    <string name="botonGuardar">Guardar</string>
+    <string name="botonVolver">Volver</string>
+    <string name="eliminarProducto">- Eliminar Producto -</string>
+    <string name="eliminarMenu">Eliminar Producto</string>
+    <string name="botonBorrar">Borrar</string>
+    <string name="disponibleProducto">Disponible</string>
+    <string name="modificarDatos">- Modificar datos del Producto -</string>
+    <string name="hintModificarNombre">Cambia el nombre...</string>
+    <string name="hintModificarPrecio">Cambia el precio...</string>
+    <string name="hintModificarIngredientes">Cambia ingredientes...</string>
+    <string name="hintModificarPeso">Cambia el peso...</string>
+</resources>
